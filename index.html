@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО "Центр ИКТ"</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Предзагрузка -->
+        <div class="loader">
+            <h1>LOADING</h1>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    <!-- Контент -->
+        <div class="main-menu">
+            <img class="bg-img" src="assets/img/Background-image.png">
+            <header class="header">
+                <img class="head-img" src="assets/img/header.png">
+                <!-- ЛОГО -->
+                <a href="#" class="logo">
+                <span class="sd-container">
+                    <span class="initial-text"><img src="assets/img/логотип_ЦИКТ_чист.png" alt="logo_CIKT"></span>
+                    <span class="hover-text">
+                    <span class="line1">ЦЕНТР</span>
+                    <span class="line2">ИНФОРМАЦИОННО</span>
+                    <span class="line3">КОММУНИКАЦИОННЫХ</span>
+                    <span class="line4">ТЕХНОЛОГИЙ</span>
+                    </span>
+                </span>
+                </a>
+                <!-- Hamburger icon -->
+                <input class="side-menu" type="checkbox" id="side-menu"/>
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                <!-- Menu -->
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="gallery" data-scroll-nav="#gallery">Продукция</a></li>
+                        <li><a href="blog" data-scroll-nav="#blog">О нас</a> </li>
+                        <li><a href="about" data-scroll-nav="#about">Контакты</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Текстовая колонка -->
+                        <div id="gallery">
+                            <div class="text-alcospot1">
+                                <script type="text/javascript" src="assets/js/jquery-1.6.4.min.js"></script>
+                                Комплекс <label class="openokno2" style="cursor: pointer"><b>«ALCOSPOT»</b></label> с мобильной платформой – 
+                                это оптимальное решение для учета продукта на производстве пива ( и др.), не имеющего жесткой обвязки. 
+                                На мобильной платформе установлены - расходомер электромагнитный, 
+                                отсечной клапан, датчик температуры, так же есть возможностью установки 
+                                планшета оператора управления розливом во влагозащитном корпусе. 
+                                Данная платформа может быть подключена к каждой отдельной ЦКТ. 
+                                Подобное решение полностью отвечает требованиям ФС РАР, 
+                                которые предъявляются к производителям пива, сидра,
+                                пуаре и других слабоалкогольных напитков.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Колонка с картинкой -->
+                        <div id="controller">
+                            <img src="assets/img/Контроллер.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Блок с описанием -->
+                        <div class="blockcentr2" style="display: none">
+                            <div class="labelalco1">
+                                <label class="openokno2" style="cursor: pointer;float: right;color: rgba(10, 10, 10, 0.8);"><p>Закрыть</p></label>
+                                <b>ALCOSPOT</b><br/>
+                                <br>Автоматическое средство измерения и учета (АСИиУ), 
+                                предназначенное для учета объемов производства этилового спирта, алкогольной и спиртосодержащей продукции</br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Колонка с картинкой -->
+                        <div id="kran">
+                            <img src="assets/img/Кран.svg" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Текстовая колонка -->
+                        <div id="kran">
+                            <div class="text-alcospot2">
+                                <b>ФУНКЦИИ «ALCOSPOT»</b><br/>
+                                <ul class="my-list">
+                                    <li>
+                                      Сбор данных от устройств и приборов
+                                    </li>
+                                    <li>
+                                      <b>Фиксация и просмотр параметров измеряемой среды:</b>
+                                      <ul class="nested-list">
+                                        <li>объем продукта, приведенный к 20 ºС</li>
+                                        <li>объем продукта при текущей температуре</li>
+                                        <li>крепость продукта</li>
+                                        <li>масса и объем продукта</li>
+                                        <li>готовая продукция в штуках</li>
+                                        <li>время измерений</li>
+                                      </ul>
+                                    </li>
+                                    <li>Графическое отображение и управление параметров</li>
+                                    <li>Сохранение измеренных значений при отключении электропитания</li>
+                                    <li>Хранение базы данных</li>
+                                    <li>Блокировка линий учета клапанами в случаях отключения электропитания</li>
+                                    <li>Проверка формирования файлов</li>
+                                    <li>Мониторинг системы с любого места</li>
+                                    <li>Обновление, тестирование и диагностика устройств и приборов</li>
+                                    <li>Возможность подключения различного типа и производителя устройств</li>
+                                    <li>Универсальность загрузки и выбора любого вида и типа продукции</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="text-alcospot3">
+                        <div class="image-overlay">
+                            <hr>
+                          <img class="img-bg2" src="assets/img/Original_2_2.png" alt="Background Image">
+                          <div class="text-overlay">
+                            <p>ООО <strong>«Центр Информационно-Коммуникационных Технологий»</strong> является одним из ведущих поставщиком комплексов учета спирта, 
+                            алкогольной и спиртосодержащей продукции. Благодаря четко выстроенным производственным процессам, 
+                            нами соблюдаются установленные сроки, исключаются возможные ошибки,
+                            прилагается максимум усилий для достижения результата, 
+                            клиенты всегда могут получить информацию о текущем статусе заказа.</p>
+                            <p>Мы занимаемся разработкой, производством и дистрибуцией оборудования и программного обеспечения 
+                            для автоматизации учета объемов производства и оборота на предприятиях производителях этилового спирта, 
+                            алкогольной и спиртосодержащей продукции, а также на предприятиях осуществляющих как оптовый, 
+                            так и розничный оборот алкогольной и спиртосодержащей продукции, в т.ч. на предприятиях общественного питания.</p>
+                            <p id="blog">Имеем в своем багаже ряд разработанного нами программного обеспечения, 
+                            а также сопутствующего ПО (Веб-сервисы мониторинга работоспособности оборудования, 
+                            передвижения автотранспорта со съемом и отображением необходимых параметров), которые мы готовы предложить нашим клиентам.
+                            </p>
+                            <p>Автоматизированные комплексы учета спирта, алкогольной и спиртосодержащей продукции, 
+                            выпускаемые на производственных мощностях ООО «Центр ИКТ», используются ведущими российскими предприятиями, 
+                            выпускающими алкогольную и фармацевтическую продукцию, перевозчиками спирта.
+                            Наши разработки применяются как на предприятиях, так и в органах государственной власти.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="pluses">НАШИ ПРЕИМУЩЕСТВА</h1>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Сопровождение заказов 
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body ">
+                                    Специалисты компании оказывают полное информационное и 
+                                    техническое сопровождение при поставках продукции, работаем на всей территории Российской Федерации
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Гарантия качества
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Производимые автоматизированные комплексы соответствуют всем методическим рекомендациям и 
+                                    формируют полноценный пакет данных, необходимых для передачи в ЕГАИС
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Индивидуальный подход
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    При составлении предложения на комплекс, учитывается специфика деятельности предприятия и особенности производства
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Шеф-монтажные и пуско-наладочные работы
+                                </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Заказчикам предоставляется полный спектр услуг, связанных с наладкой и эксплуатацией поставляемых комплексов учета
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Сертифицированная продукция
+                                </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Комплекс внесен в федеральный реестр средств измерений и официально допущен к использованию на территории Российской Федерации
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Гарантийное и пост гарантийное сервисное обслуживание
+                                </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    В комплекс услуг сервисного обслуживания входят услуги собственной сервисной службы компании
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="row text-alcospot4">
+                    <div class="col-md-6">
+                        <div class="sticky-carousel-container">
+                            <div class="carousel">
+                                <h1 class="name1">НАШИ КЛИЕНТЫ</h1>
+                                <ul class="carousel-body">
+                                    <li><a href="http://alcoworld.biz/" target="_blank"><img class="img-cli1" src="assets/img/Алковорлд_лого.png"></a></li>
+                                    <li><a href="https://www.rosspirtprom.ru/" target="_blank"><img src="assets/img/РСП_лого-2.png"></a></li>
+                                    <li><a href="https://bashspirt.ru/" target="_blank"><img src="assets/img/Башспирт_лого+текст-2.svg"></a></li>
+                                    <li><a href="http://valarsamara.ru/" target="_blank"><img class="img-cli" src="assets/img/Валар_лого_2.svg"></a></li>
+                                    <li><a href="https://annabeer.ru/" target="_blank"><img src="assets/img/Аннинскийпивчик_лого-2.svg"></a></li>
+                                    <li><a href="https://tulapharm.com/" target="_blank"><img src="assets/img/Тула ФФ_лого2.svg"></a></li>
+                                    <li><a href="http://www.kosouhoff.ru/" target="_blank"><img src="assets/img/Косоухофф_лого+без фона.png"></a></li>
+                                    <li><a href="http://www.rosbio.ru/" target="_blank"><img class="img-cli" src="assets/img/Росбио_лого-2.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-bg4" src="assets/img/Завод.svg">
+                        <h1 class="name2">С нами работают как крупные, так и малые производители алкогольной продукции 
+                        в Российской Федерации</h1>
+                    </div>
+                </div>
+                <hr>    
+                    </aside>
+            </div>
+            <!-- Фоотер с картой -->
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="map-container">
+                            <div class="info">
+                                <h1><strong>Общие контакты</strong></h1>
+                                <div class="reqvisits-param">
+                                    <a class="link" href="tel:+74996536143">+7 (499) 653-61-43</a> | <a class="link" href="mailto:info@centrikt.ru">info@centrikt.ru</a></br></div>
+                                <h2><strong>Для писем:</strong></h2>
+                                <div class="reqvisits-param">
+                                115280, г. Москва, ул.Ленинская Слобода, дом 19, 
+                                этаж 1, комн. 41x1д, офис 23</br></div>
+                                <h2><strong>Офис:</strong></h2> <div class="reqvisits-param">2-я Синичкина, 9А, строение 10, 1 этаж, комната 7</div>
+                                <h2><strong>Сервисная служба</strong></h2>
+                                <div class="time-work">
+                                Дни приема заявок</br>
+                                пн-чт: с 9:00 до 18:00</br>
+                                пт: с 9:00 до 17:00</br>
+                                </div>
+                                <h4><strong>Вопросы по стационарному комплексу АСИиУ AlcoSpot, а также
+                                по системе перевозок спирта и обслуживания:</strong></h4>
+                                <div class="reqvisits-param"><a class="link" href="tel:+74996536143">+7(499) 653-61-43</a> | <a class="link" href="mailto:service@centrikt.ru">service@centrikt.ru</a></br></div>
+                                <h4><strong>Реквизиты</strong></h4>
+                                <div class="reqvisits">
+                                ИНН/КПП: 7725753653 / 772501001</br>
+                                ОГРН: 1127746273918</br>
+                                ОКПО/ОКТМО: 9219036 / 45914000</br>
+                                БАНК: Филиал «Центральный» Банка ВТБ ПАО в г. Москве</br>
+                                р/с: 40702810700000062137</br>
+                                к/с: 30101810145250000411</br>
+                                БИК: 044525411</br>
+                                ИНН: 7710353606</br>
+                                Адрес банка: 107031, г. Москва, ул. Рождественка, д. 10/2, стр. 1</br>
+                                </div>
+                                <strong class="confidetional">© 2012 - 2023 ЦентрИКТ<a class="link" href="assets/img/Confidetional.pdf" target="_blank">&nbsp;&nbsp;Заявление о конфиденциальности</a></strong></br>
+                            </div>
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                      <script type="text/javascript">
+                        ymaps.ready(function() {
+                          var map = new ymaps.Map("map", {
+                            center: [55.761342, 37.718027], // Координаты центра карты
+                            zoom: 18, // Уровень масштабирования карты
+                          });
+                          
+                          var customIcon = new ymaps.Placemark(
+                            [55.761342, 37.718027], // Координаты отображения метки на карте
+                            {}, // Свойства метки, например, текст или ссылки
+                            {
+                              // Опции и стили иконки
+                              iconLayout: 'default#image',
+                              iconImageHref: 'assets/img/point.png', // Путь к вашей иконке
+                              iconImageSize: [70, 80], // Размеры изображения иконки
+                            }
+                          );
+                      
+                          // Добавляем кастомную иконку на карту
+                          map.geoObjects.add(customIcon);
+                        });
+                      </script>
+                      <div id="about"></div>
+                </div>
+            </footer>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $(".openokno2").click(function(){
+        $(".blockcentr2").slideToggle("2000");
+            });
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

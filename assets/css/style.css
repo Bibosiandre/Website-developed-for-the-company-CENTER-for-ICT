@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&family=Oswald:wght@200&display=swap');
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+/* Анимация предзагрузки*/
+.main-menu{
+  display: none;
+  opacity: 0;
+}
+.loader{
+	margin:200px auto;
+}
+h1{
+	color:black;
+	font-size:30px;
+	letter-spacing:1px;
+	font-weight:200;
+	text-align:center;
+}
+.loader span{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	display:inline-block;
+	position:absolute;
+	left:50%;
+	margin-left:-10px;
+	-webkit-animation:3s infinite linear;
+	-moz-animation:3s infinite linear;
+	-o-animation:3s infinite linear;
+	
+}
+
+.loader span:nth-child(2){
+	background:#d5dbd9;
+	-webkit-animation:kiri 1.2s infinite linear;
+	-moz-animation:kiri 1.2s infinite linear;
+	-o-animation:kiri 1.2s infinite linear;
+	
+}
+.loader span:nth-child(3){
+	background:#11e49e;
+	z-index:100;
+}
+.loader span:nth-child(4){
+	background:#11bcc2;
+	-webkit-animation:kanan 1.2s infinite linear;
+	-moz-animation:kanan 1.2s infinite linear;
+	-o-animation:kanan 1.2s infinite linear;
+}
+
+
+@-webkit-keyframes kanan {
+    0% {-webkit-transform:translateX(20px);
+    }
+   
+	50%{-webkit-transform:translateX(-20px);
+	}
+	
+	100%{-webkit-transform:translateX(20px);
+	z-index:200;
+	}
+}
+@-moz-keyframes kanan {
+    0% {-moz-transform:translateX(20px);
+    }
+   
+	50%{-moz-transform:translateX(-20px);
+	}
+	
+	100%{-moz-transform:translateX(20px);
+	z-index:200;
+	}
+}
+@-o-keyframes kanan {
+    0% {-o-transform:translateX(20px);
+    }
+   
+	50%{-o-transform:translateX(-20px);
+	}
+	
+	100%{-o-transform:translateX(20px);
+	z-index:200;
+	}
+}
+
+@-webkit-keyframes kiri {
+     0% {-webkit-transform:translateX(-20px);
+	z-index:200;
+    }
+	50%{-webkit-transform:translateX(20px);
+	}
+	100%{-webkit-transform:translateX(-20px);
+	}
+}
+
+@-moz-keyframes kiri {
+     0% {-moz-transform:translateX(-20px);
+	z-index:200;
+    }
+	50%{-moz-transform:translateX(20px);
+	}
+	100%{-moz-transform:translateX(-20px);
+	}
+}
+@-o-keyframes kiri {
+     0% {-o-transform:translateX(-20px);
+	z-index:200;
+    }
+	50%{-o-transform:translateX(20px);
+	}
+	100%{-o-transform:translateX(-20px);
+	}
+}
+
+
+/* Варианты */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Oswald', sans-serif !important;
+    overflow-x:hidden;
+  }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background: rgb(230,227,223);
+    background: -moz-linear-gradient(90deg, rgba(230,227,223,0.9361344879748774) 23%, rgba(35,236,234,0.9585434515603116) 65%, rgba(85,168,215,0.5859944319524685) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(230,227,223,0.9361344879748774) 23%, rgba(35,236,234,0.9585434515603116) 65%, rgba(85,168,215,0.5859944319524685) 89%);
+    background: linear-gradient(90deg, rgba(230,227,223,0.9361344879748774) 23%, rgba(35,236,234,0.9585434515603116) 65%, rgba(85,168,215,0.93) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e3df",endColorstr="#55a8d7",GradientType=1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.head-img {
+  position: fixed;
+  display: inline;
+  opacity: 0.05;
+  top:-365px;
+}
+@media screen and (max-width: 1100px) {
+  .head-img {
+    position: absolute;
+    display: inline;
+    opacity: 0.07;
+    height: 100%;
+    width: 100%;
+    top:0px;
+  }
+}
+/* Лого */
+.logo {
+    display: inline-block;
+     /*Цвет логотипа*/
+    font-size: 60px;
+    margin-left: 10px;
+  }
+  
+  .sd-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .initial-text {
+    transition: opacity 0.5s ease;
+    display: inline;
+    color: black;
+  }
+  .initial-text img{
+    width: 80px;
+    height: 70px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .hover-text {
+    color:black; /*Цвет логотипа при наведении*/
+    position: absolute;
+    padding-top: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    display: inline-block;
+    font-size: 20px;
+    line-height: 16px;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 1s ease;
+  }
+  .hover-text .line1,.line2, .line3, .line4 {
+    display: block;
+    padding-bottom: 7px;
+  }
+  
+  .logo:hover .initial-text {
+    opacity: 0;
+  }
+  
+  .logo:hover .hover-text {
+    opacity: 1;
+  }
+/* Навигация */
+.nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgb(230,227,223);
+    background: -moz-linear-gradient(90deg, rgba(230,227,223,1) 23%, rgba(35,236,234,1) 65%, rgba(85,168,215,1) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(230,227,223,1) 23%, rgba(35,236,234,1) 65%, rgba(85,168,215,1) 89%);
+    background: linear-gradient(90deg, rgba(230,227,223,1) 23%, rgba(35,236,234,1) 65%, rgba(85,168,215,0.93) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e3df",endColorstr="#55a8d7",GradientType=1); /*Цвет меню при мобилкии*/
+    overflow: hidden;
+    max-height: 0;
+    transition: 2s;
+}
+
+.menu a {
+    display:flex;
+    font-size: 40px;
+    margin-top:10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: black; /* Цвет шрифта в меню для мобилок и ПК */
+    cursor: pointer; /* Добавлен стиль указателя */
+    text-decoration: none;
+    -webkit-box-shadow: 7px 0px 0px -5px rgba(34, 60, 80, 0.75);
+    -moz-box-shadow: 7px 0px 0px -5px rgba(34, 60, 80, 0.75);
+    box-shadow: 7px 0px 0px -5px rgba(34, 60, 80, 0.75);
+    text-align: center;
+    letter-spacing:2px;
+    transition: transform 0.3s ease;
+}
+
+.menu a:hover {
+    background-color:none; /* Цвет шрифта при наведении в меню для телефонов*/
+    transform: translateX(-10px);
+    color:black;
+    font-weight: 600;
+    transition: transform 0.3s ease-out;
+    padding-left: 10px;   
+}
+
+
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+.hamb-line {
+    background: black; /* Цвет иконки меню */
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::before, .hamb-line::after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.side-menu:checked ~ .nav {
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* Transform menu for resolutions */
+@media screen and (min-width: 768px) {
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background: none;
+        /*Цвет  меню станадартное где якоря*/
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        font-weight: 600;
+        color:black;  /*Цвет  меню станадартное комп при наведении*/
+    }
+
+    .hamb {
+        display: none;
+    }
+    #controller img {
+        margin-left: 5%;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/*Конец кода header*/
+
+.text-alcospot1 {
+    margin-top: 20px;
+    font-size: 25px;
+     
+}
+#controller img {
+    margin-top: 10px;
+    margin-left: 20%;
+    width: 370px;
+    height: 370px;
+}
+#kran img {
+    margin-top: 135px;
+    margin-left: 20%;
+    width: 300px;
+    height: 300px;
+}
+.blockcentr2 {
+    width: 500px;
+    position: fixed;
+    left: 50%;
+    margin-left: -205px;
+    background: #f7f7f7;
+    padding: 15px;
+    line-height: 23px;
+    z-index: 999;
+    top: 250px;
+    font-size: 25px;
+    background: rgb(230,227,223);
+    background: -moz-linear-gradient(147deg, rgba(230,227,223,1) 23%, rgba(44,236,233,1) 72%, rgba(57,141,209,1) 93%);
+    background: -webkit-linear-gradient(147deg, rgba(230,227,223,1) 23%, rgba(44,236,233,1) 72%, rgba(57,141,209,1) 93%);
+    background: linear-gradient(147deg, rgba(230,227,223,1) 23%, rgba(44,236,233,1) 72%, rgba(57,141,209,1) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e3df",endColorstr="#398dd1",GradientType=1);
+}
+@media screen and (max-width: 767px) {
+    .blockcentr2 {
+        position: fixed;
+        width: 200px; /* Изменяем ширину блока от ширины экрана */
+        left: 270px; /* Располагаем блок по центру, с отступом от левого края экрана */
+        font-size: 20px;/* Уменьшаем размер шрифта */
+    }
+    #controller img {
+        margin-top: 10px;
+        margin-left: 5%;
+        width: 200px;
+        height: 200px;
+        margin-left: 20%;
+    }
+    #kran img {
+        margin-top: 100px;
+        margin-left: 5%;
+        width: 200px;
+        height: 200px;
+        margin-left: 20%;
+    }     
+    }
+.nested-list {
+        font-size: 20px;
+        margin-left: 70px;
+        list-style-type: decimal; /* Цифровое перечисление для вложенного списка */
+      }
+
+.openokno2 p,b {
+    transition: all 0.2s ease;
+}
+.openokno2:hover p {
+    transition: all 0.2s ease;
+    font-weight: bold; /* Делаем текст жирным */
+    font-size: 105%; /* Увеличиваем размер шрифта на 10% */
+    text-decoration: underline; /* Добавляем подчеркивание */
+    -webkit-text-decoration-color: rgba(0, 0, 0, 0.6);
+    -moz-text-decoration-color:rgba(0, 0, 0, 0.6); 
+    text-decoration-color: rgba(0, 0, 0, 0.6); /* Добавляем подчеркивание */
+}
+.openokno2:hover b {
+    transition: all 0.2s ease;
+    font-size: 115%; /* Увеличиваем размер шрифта на 10% */
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgba(0, 0, 0, 0.6);
+    -moz-text-decoration-color:rgba(0, 0, 0, 0.6); 
+    text-decoration-color: rgba(0, 0, 0, 0.6); /* Добавляем подчеркивание */
+}
+.labelalco1 {
+    margin-bottom: 10px;
+}
+.text-alcospot2 {
+    margin-top: 20px;
+    font-size: 25px; 
+}
+.my-list b{
+    font-size: 110%;
+}
+.my-list:hover b{
+    font-size: 105%;
+    text-decoration: underline; /* Добавляем подчеркивание */
+    -webkit-text-decoration-color: rgba(0, 0, 0, 0.6);
+    -moz-text-decoration-color:rgba(0, 0, 0, 0.6); 
+    text-decoration-color: rgba(0, 0, 0, 0.6);
+}
+.my-list li::before {
+    content: "\2713"; /* Добавляем код графической иконки галочки (&#x2713;) */
+    display: inline-block; /* Отображаем иконку внутри пункта списка */
+    margin-right: 5px; /* Добавляем небольшой отступ между галочкой и текстом */
+  }
+  
+  .nested-list li::before {
+    display: none; /* Убираем галочки для пунктов во вложенном списке */
+  }
+  
+  .nested-list {
+    background: rgb(230,227,223);
+    background: -moz-linear-gradient(150deg, rgba(230,227,223,0.7932773451177346) 23%, rgba(44,236,233,0.8577031154258579) 72%, rgba(57,141,209,0.8156863087031687) 93%);
+    background: -webkit-linear-gradient(150deg, rgba(230,227,223,0.7932773451177346) 23%, rgba(44,236,233,0.8577031154258579) 72%, rgba(57,141,209,0.8156863087031687) 93%);
+    background: linear-gradient(150deg, rgba(230,227,223,0.7932773451177346) 23%, rgba(44,236,233,0.8577031154258579) 72%, rgba(57,141,209,0.8156863087031687) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e3df",endColorstr="#398dd1",GradientType=1);
+    margin-left: 70px;
+    list-style-type: decimal; /* Цифровое перечисление для вложенного списка */
+  }
+  
+  ul ul {
+    max-height: 0; /* Устанавливаем максимальную высоту 0, чтобы спрятать список */
+    overflow: hidden; /* Скрываем содержимое списка, выходящее за его пределы */
+    transition: max-height 0.3s ease; /* Добавляем плавность при изменении максимальной высоты */
+  }
+  
+  ul li:hover > ul {
+    max-height: 300px; /* Устанавливаем максимальную высоту списка, чтобы показать его содержимое */
+  }
+.bg-img {
+    background-size: cover; /* Масштабирование картинки под размер контейнера */
+    background-position: center; /* Расположение картинки по центру */
+    background-repeat: no-repeat; /* Отключение повторения фона */
+    opacity: 0.22; /* Прозрачность 50% */
+    filter: blur(7px); /* Размытие на 10px */
+    position: fixed; /* Позиционирование на всю ширину и высоту экрана */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Нижний слой, чтобы контент находился поверх */
+  }
+@media screen and (max-width: 767px) {
+  .bg-img {
+    width:100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Отключение повторения фона */
+    opacity: 0.22; /* Прозрачность 50% */
+    filter: blur(2px); /* Размытие на 10px */
+    z-index: -1; /* Нижний слой, чтобы контент находился поверх */
+  }
+}
+.text-alcospot3 {
+  position: relative;
+}
+
+.text-alcospot3 .image-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.text-alcospot3 .image-overlay img {
+  filter: grayscale(80%);
+  width: 100%;
+  height: auto;
+}
+
+.text-alcospot3 .text-overlay {
+  padding: 10px;
+  position: absolute;
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 1300px; /* Added max-width to limit the width on larger screens */
+  height: 550px;
+  transform: translateY(-117%);
+  background-color: rgba(255, 255, 255, 0.97); /* Серый полупрозрачный фон */
+}
+
+/* Добавленные стили */
+.text-alcospot3 .text-overlay p {
+  font-size: 23px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  margin: 0; /* Убираем отступы параграфов */
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .text-alcospot3 .image-overlay img {
+    display: none; /* Hide the image on smaller screens */
+  }
+
+  .text-alcospot3 .text-overlay {
+    background: rgb(230, 227, 223);
+background: -moz-linear-gradient(
+  150deg,
+  rgba(230, 227, 223, 0.01) 23%, /* Adjusted opacity to 0.4 */
+  rgba(44, 236, 233, 0.01) 72%,   /* Adjusted opacity to 0.4 */
+  rgba(57, 141, 209, 0.01) 93%    /* Adjusted opacity to 0.4 */
+);
+background: -webkit-linear-gradient(
+  150deg,
+  rgba(230, 227, 223, 0.4) 23%, /* Adjusted opacity to 0.4 */
+  rgba(44, 236, 233, 0.4) 72%,   /* Adjusted opacity to 0.4 */
+  rgba(57, 141, 209, 0.4) 93%    /* Adjusted opacity to 0.4 */
+);
+background: linear-gradient(
+  150deg,
+  rgba(230, 227, 223, 0.6) 23%, /* Adjusted opacity to 0.4 */
+  rgba(44, 236, 233, 0.6) 72%,   /* Adjusted opacity to 0.4 */
+  rgba(57, 141, 209, 0.6) 93%    /* Adjusted opacity to 0.4 */
+);
+filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr="#66e3e3df",  /* Adjusted opacity to 0.4 */
+  endColorstr="#66398dd1",
+  GradientType=1
+);
+    position: relative;
+    height: auto; /* Allow the height to adjust based on content */
+    transform: translateY(0);
+    padding: 20px;
+  }
+
+  .text-alcospot3 .text-overlay p {
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+.pluses {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:black;
+}
+
+@media screen and (max-width: 767px) {
+  .pluses {
+    color: black;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+.accordion-body {
+  font-size: 29px;
+  letter-spacing: 1px;
+  color:black; 
+}
+.accordion-item .accordion-button {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.accordion-button {
+  color: black !important;
+  transition: background-color 0.5s ease, color 0.5s ease !important; /* Добавил !important для обеспечения приоритета */
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  color: black !important;
+  background: rgba(223, 224, 230, 0.6) !important; /* Исправлены значения фона */
+}
+
+.accordion-button:hover {
+  outline: none !important;
+  box-shadow: none !important;
+  color: black !important;
+  background: rgba(7, 241, 241, 0.3) !important; /* Исправлены значения фона */
+}
+@media screen and (max-width: 767px) {
+  .accordion-body {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:black; 
+  }
+  .accordion-item .accordion-button {
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+}
+h1 {
+  margin: 100px 0 0;
+  text-align: center;
+  color: #444;
+}
+
+/* Карусель фирм */
+.tagline {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.tagline,
+.tagline a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.text-alcospot4{
+  padding-top: 50px;
+  
+}
+
+.name1 {
+  text-align: center;
+  font-size: 65px;
+  padding-bottom: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color:black;
+}
+
+.name2 {
+  padding-top: 20px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color:black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.img-bg4 {
+  /* margin-top: 55px; */
+  margin-left: 70px;
+}
+.carousel {
+  left: 25px;
+}
+
+/* Make the container sticky */
+.sticky-carousel-container {
+  position: sticky;
+  top: 0;
+  background-color: none; /* Add your desired background color */
+  z-index: 10; /* Adjust the z-index as needed */
+}
+
+ul.carousel-body {
+  width: 40em;
+  height: 40em !important;
+  padding: 0;
+  margin: auto;
+}
+
+ul.carousel-body li {
+  background: none;
+  list-style-type: none;
+  margin-left:22%;
+  height: 20em;
+  transition: background-color 0.5s;
+}
+ul.carousel-body li:hover {
+  cursor: pointer;
+  background: none;
+  list-style-type: none;
+  height: 20em;
+  transition: background-color 0.5s;
+}
+
+
+ul.carousel-body li:nth-child(2) {
+  background: none;
+}
+ul.carousel-body img {
+  width: 300px;
+  height: 300px;
+  transition: 0.5s all;
+}
+ul.carousel-body img:hover {
+  transform: scale(110%);
+  width: 300px;
+  height: 300px;
+}
+.img-cli {
+  margin-left:-25% !important;
+  margin-top: 30px;
+  width: 500px !important;
+  height: 220px !important;
+}
+.img-cli1 {
+  margin-left:-10% !important;
+  width: 400px !important;
+  height: 300px !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .text-alcospot4{
+    padding-top: 30px;
+  }
+  .name1 {
+  font-size: 40px;
+  padding-bottom: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color:black;
+}
+
+.name2 {
+  padding-top: 20px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color:black;
+  text-transform: uppercase;
+  text-align: center;
+}
+.carousel {
+  left: 0px;
+  margin-bottom:50px;
+}
+.img-bg4 {
+  margin-left: 20%;
+  width: 250px;
+  height: 250px;
+}
+
+ul.carousel-body {
+  width: 20em;
+  height: 15em !important;
+  padding: 0;
+  margin: auto;
+}
+
+ul.carousel-body li {
+  background: none;
+  list-style-type: none;
+  height: 20em;
+  transition: background-color 0.5s;
+}
+
+ul.carousel-body li:nth-child(2) {
+  background: none;
+}
+ul.carousel-body img {
+  width: 200px;
+  height: 200px;
+}
+.img-cli {
+  width: 290px !important;
+  height: 160px !important;
+}
+.img-cli1 {
+  width: 250px !important;
+  height: 200px !important;
+}
+}
+.footer {
+  overflow-x: hidden;
+}
+#map{
+  width: 100%; 
+  height: 850px;
+  z-index: 80;
+}
+.map-container {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 520px;
+  height: 100%;
+  background-color: #f2f2f2;
+  font-size: 19px;
+  padding-left: 10px;
+  z-index: 50;
+}
+.link {
+  text-decoration: none;
+  color:black;
+}
+.link:hover {
+  text-decoration:underline;
+}
+.reqvisits {
+  letter-spacing: 1.2px;
+  margin-bottom: 15px;
+}
+.time-work {
+  letter-spacing: 1px;
+}
+.confidetional {
+  font-size: 16.5px;
+  letter-spacing: 1px;
+}
+.reqvisits-param {
+  letter-spacing: 1.5px;
+}
+@media (max-width: 1100px) {
+  .map-container {
+    flex-direction: column;
+  }
+ html{
+    overflow-x: hidden;
+ }
+  .info {
+    position: static;
+    width: 100%;
+    height: auto;
+    color: black;
+  }
+
+  #map {
+    height: 300px;
+  }
+}
