@@ -259,7 +259,7 @@ ul {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e3df",endColorstr="#55a8d7",GradientType=1); /*Цвет меню при мобилкии*/
     overflow: hidden;
     max-height: 0;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .menu a {
@@ -381,8 +381,59 @@ ul {
 .text-alcospot1 {
     margin-top: 20px;
     font-size: 25px;
-     
+    background-color: #faf9f9;
+    padding: 3px;
+    border-radius:10px;
 }
+
+.nested-list2 {
+  font-size: 25px;
+  list-style-type: decimal; /* Цифровое перечисление для вложенного списка */
+}
+
+.my-list2 b{
+font-size: 110%;
+}
+.my-list2:hover b{
+font-size: 105%;
+-webkit-text-decoration-color: rgba(0, 0, 0, 0.6);
+-moz-text-decoration-color:rgba(0, 0, 0, 0.6); 
+text-decoration-color: rgba(0, 0, 0, 0.6);
+}
+
+.nested-list2 li::before {
+display: none; /* Убираем галочки для пунктов во вложенном списке */
+}
+
+.nested-list2 {
+margin-right: 20px;
+margin-bottom: 5px;
+background-color:rgba(255, 228, 196, 0.700);
+border-radius: 10px;
+list-style-type: decimal; /* Цифровое перечисление для вложенного списка */
+}
+
+.my-list2:hover .alcospot-trigger {
+  cursor: pointer;
+}
+.alcospot-trigger {
+  font-size: 36px;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(45deg, #000000, #0dd8d8, #000000, #0dd8d8);
+  background-size: 300% 300%;
+  animation: gradientAnimation 4s ease-in-out infinite;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 #controller img {
     margin-top: 10px;
     margin-left: 20%;
@@ -395,30 +446,7 @@ ul {
     width: 300px;
     height: 300px;
 }
-.blockcentr2 {
-    width: 500px;
-    position: fixed;
-    left: 50%;
-    margin-left: -205px;
-    background: #f7f7f7;
-    padding: 15px;
-    line-height: 23px;
-    z-index: 999;
-    top: 250px;
-    font-size: 25px;
-    background: rgb(230,227,223);
-    background: -moz-linear-gradient(147deg, rgba(230,227,223,1) 23%, rgba(44,236,233,1) 72%, rgba(57,141,209,1) 93%);
-    background: -webkit-linear-gradient(147deg, rgba(230,227,223,1) 23%, rgba(44,236,233,1) 72%, rgba(57,141,209,1) 93%);
-    background: linear-gradient(147deg, rgba(230,227,223,1) 23%, rgba(44,236,233,1) 72%, rgba(57,141,209,1) 93%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e3df",endColorstr="#398dd1",GradientType=1);
-}
-@media screen and (max-width: 767px) {
-    .blockcentr2 {
-        position: fixed;
-        width: 200px; /* Изменяем ширину блока от ширины экрана */
-        left: 270px; /* Располагаем блок по центру, с отступом от левого края экрана */
-        font-size: 20px;/* Уменьшаем размер шрифта */
-    }
+@media screen and (max-width: 1100px) {
     #controller img {
         margin-top: 10px;
         margin-left: 5%;
@@ -434,36 +462,12 @@ ul {
         margin-left: 20%;
     }     
     }
-.nested-list {
-        font-size: 20px;
-        margin-left: 70px;
-        list-style-type: decimal; /* Цифровое перечисление для вложенного списка */
-      }
 
-.openokno2 p,b {
-    transition: all 0.2s ease;
-}
-.openokno2:hover p {
-    transition: all 0.2s ease;
-    font-weight: bold; /* Делаем текст жирным */
-    font-size: 105%; /* Увеличиваем размер шрифта на 10% */
-    text-decoration: underline; /* Добавляем подчеркивание */
-    -webkit-text-decoration-color: rgba(0, 0, 0, 0.6);
-    -moz-text-decoration-color:rgba(0, 0, 0, 0.6); 
-    text-decoration-color: rgba(0, 0, 0, 0.6); /* Добавляем подчеркивание */
-}
-.openokno2:hover b {
-    transition: all 0.2s ease;
-    font-size: 115%; /* Увеличиваем размер шрифта на 10% */
-    text-decoration: underline;
-    -webkit-text-decoration-color: rgba(0, 0, 0, 0.6);
-    -moz-text-decoration-color:rgba(0, 0, 0, 0.6); 
-    text-decoration-color: rgba(0, 0, 0, 0.6); /* Добавляем подчеркивание */
-}
-.labelalco1 {
-    margin-bottom: 10px;
-}
+
 .text-alcospot2 {
+    background-color: #faf9f9;
+    padding: 13px;
+    border-radius:10px;
     margin-top: 20px;
     font-size: 25px; 
 }
@@ -472,7 +476,6 @@ ul {
 }
 .my-list:hover b{
     font-size: 105%;
-    text-decoration: underline; /* Добавляем подчеркивание */
     -webkit-text-decoration-color: rgba(0, 0, 0, 0.6);
     -moz-text-decoration-color:rgba(0, 0, 0, 0.6); 
     text-decoration-color: rgba(0, 0, 0, 0.6);
@@ -488,12 +491,11 @@ ul {
   }
   
   .nested-list {
-    background: rgb(230,227,223);
-    background: -moz-linear-gradient(150deg, rgba(230,227,223,0.7932773451177346) 23%, rgba(44,236,233,0.8577031154258579) 72%, rgba(57,141,209,0.8156863087031687) 93%);
-    background: -webkit-linear-gradient(150deg, rgba(230,227,223,0.7932773451177346) 23%, rgba(44,236,233,0.8577031154258579) 72%, rgba(57,141,209,0.8156863087031687) 93%);
-    background: linear-gradient(150deg, rgba(230,227,223,0.7932773451177346) 23%, rgba(44,236,233,0.8577031154258579) 72%, rgba(57,141,209,0.8156863087031687) 93%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e3df",endColorstr="#398dd1",GradientType=1);
-    margin-left: 70px;
+    background-color:rgba(255, 228, 196, 0.700);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 120px;
+    font-size: 25px;
     list-style-type: decimal; /* Цифровое перечисление для вложенного списка */
   }
   
@@ -521,14 +523,25 @@ ul {
   }
 @media screen and (max-width: 767px) {
   .bg-img {
-    width:100%;
-    height: 70%;
-    background-size: cover;
+    /* width: 120%;
+    height: 70%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    background-size: contain;
+    margin: 0px;
+    padding: 0px;
     background-position: center;
     background-repeat: no-repeat; /* Отключение повторения фона */
-    opacity: 0.22; /* Прозрачность 50% */
+    opacity: 0.22; /* Прозрачность */
     filter: blur(2px); /* Размытие на 10px */
     z-index: -1; /* Нижний слой, чтобы контент находился поверх */
+  }
+  .nested-list {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 25px;
+    list-style-type: decimal; /* Цифровое перечисление для вложенного списка */
   }
 }
 .text-alcospot3 {
@@ -541,6 +554,7 @@ ul {
 }
 
 .text-alcospot3 .image-overlay img {
+  border-radius:10px;
   filter: grayscale(80%);
   width: 100%;
   height: auto;
@@ -551,13 +565,14 @@ ul {
   position: absolute;
   width: 100%; /* Adjusted width for responsiveness */
   max-width: 1300px; /* Added max-width to limit the width on larger screens */
-  height: 550px;
+  height: 575px;
   transform: translateY(-117%);
-  background-color: rgba(255, 255, 255, 0.97); /* Серый полупрозрачный фон */
+  background-color: rgba(255, 255, 255, 0.98); /* Серый полупрозрачный фон */
 }
 
 /* Добавленные стили */
 .text-alcospot3 .text-overlay p {
+  text-align: justify;
   font-size: 23px;
   padding-bottom: 15px;
   letter-spacing: 1px;
@@ -571,27 +586,27 @@ ul {
   }
 
   .text-alcospot3 .text-overlay {
+    border-radius:10px;
     background: rgb(230, 227, 223);
-background: -moz-linear-gradient(
-  150deg,
-  rgba(230, 227, 223, 0.01) 23%, /* Adjusted opacity to 0.4 */
-  rgba(44, 236, 233, 0.01) 72%,   /* Adjusted opacity to 0.4 */
-  rgba(57, 141, 209, 0.01) 93%    /* Adjusted opacity to 0.4 */
+    background: -moz-linear-gradient(150deg,
+    rgba(230, 227, 223, 0.9) 23%, 
+    rgba(44, 236, 233, 0.9) 72%,   
+    rgba(57, 141, 209, 0.9) 93%    
 );
-background: -webkit-linear-gradient(
-  150deg,
-  rgba(230, 227, 223, 0.4) 23%, /* Adjusted opacity to 0.4 */
-  rgba(44, 236, 233, 0.4) 72%,   /* Adjusted opacity to 0.4 */
-  rgba(57, 141, 209, 0.4) 93%    /* Adjusted opacity to 0.4 */
+background: -webkit-linear-gradient(150deg,
+  rgba(230, 227, 223, 0.9) 23%, 
+  rgba(44, 236, 233, 0.9) 72%,   
+  rgba(57, 141, 209, 0.9) 93%    
 );
 background: linear-gradient(
   150deg,
-  rgba(230, 227, 223, 0.6) 23%, /* Adjusted opacity to 0.4 */
-  rgba(44, 236, 233, 0.6) 72%,   /* Adjusted opacity to 0.4 */
-  rgba(57, 141, 209, 0.6) 93%    /* Adjusted opacity to 0.4 */
+  rgba(230, 227, 223, 0.9) 23%, 
+  rgba(44, 236, 233, 0.9) 72%,   
+  rgba(57, 141, 209, 0.65) 93%    /* Великая сила в том, чтобы быть верным самому себе, даже если это означает 
+  оказаться одиноким в мире, где ценности оскудели и двуличие царит. */
 );
 filter: progid:DXImageTransform.Microsoft.gradient(
-  startColorstr="#66e3e3df",  /* Adjusted opacity to 0.4 */
+  startColorstr="#66e3e3df",  
   endColorstr="#66398dd1",
   GradientType=1
 );
