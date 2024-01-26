@@ -1,3 +1,5 @@
+# https://beer.centrikt.ru/
+Данный сайт используется организацией для продвижения продукции / This site is used by the organization to promote products
 # https://bibosiandre.github.io/Website-developed-for-the-company-CENTER-for-ICT/
 Ссылка на сайт/Link to the website
 # Сайт разработанный для компании ЦЕНТР ИКТ(Информационно-коммуникационные технологии/Website developed for the company CENTER for ICT (Information and Communication Technologies)
