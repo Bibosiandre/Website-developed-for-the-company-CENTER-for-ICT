@@ -16,9 +16,20 @@ The site restart screen displays the main content within a second
 
 ![экран Предзагрзуки](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/1.PNG)
 
+# Update
+![](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/18.png)
+
+![](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/19.png)
+
+Добавлен блок с видео и иконки для навигации и галереей картинок/
+
+Added a block with video and icons for navigation and image gallery
+
 Основная страница сайта с наименованием продукции ее назначение и функции, а также меню навигации при нажатии на которые направляет пользователя к блоку с данным контентом/
 
 The main page of the site with the name of the product, its purpose and functions, as well as the navigation menu, which, when clicked, directs the user to a block with this content
+
+
 
 ![Функционал сайта](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/2.PNG)
 
@@ -33,6 +44,9 @@ The screenshot below shows the hover and click functions
 A block with information about the company
 
 ![Функционал сайта3](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/5.png)
+
+# Update
+![](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/20.png)
 
 Блок с аккордеоном и информацией/
 
@@ -56,6 +70,9 @@ A block with contacts and an interactive map
 ![Функционал сайта8](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/10.png)
 
 # Мобильная версия сайта/Mobile version of the site
+# Update
+
+![](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/21.png)
 
 ![Функционал сайта9](https://github.com/Bibosiandre/Website-developed-for-the-company-CENTER-for-ICT/blob/main/demo/11.png)
 
